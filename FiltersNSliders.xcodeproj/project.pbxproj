@@ -17,6 +17,7 @@
 		1FFFD0552C18A46300DBD96B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD0542C18A46300DBD96B /* ViewModel.swift */; };
 		1FFFD0572C18A70A00DBD96B /* kmart_synthgroove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFD0562C18A70A00DBD96B /* kmart_synthgroove.mp3 */; };
 		1FFFD05B2C18B5BF00DBD96B /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1FFFD05A2C18B5BF00DBD96B /* AudioKit */; };
+		1FFFD05D2C18BE4300DBD96B /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD05C2C18BE4300DBD96B /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1FFFD0472C189FB200DBD96B /* FiltersNSlidersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersNSlidersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1FFFD0542C18A46300DBD96B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1FFFD0562C18A70A00DBD96B /* kmart_synthgroove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kmart_synthgroove.mp3; sourceTree = "<group>"; };
+		1FFFD05C2C18BE4300DBD96B /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				1FFFD02A2C189FB100DBD96B /* FiltersNSlidersApp.swift */,
 				1FFFD0542C18A46300DBD96B /* ViewModel.swift */,
 				1FFFD02C2C189FB100DBD96B /* ContentView.swift */,
+				1FFFD05C2C18BE4300DBD96B /* ChartView.swift */,
 				1FFFD02E2C189FB200DBD96B /* Assets.xcassets */,
 				1FFFD0302C189FB200DBD96B /* Preview Content */,
 			);
@@ -283,6 +286,7 @@
 				1FFFD02D2C189FB100DBD96B /* ContentView.swift in Sources */,
 				1FFFD0552C18A46300DBD96B /* ViewModel.swift in Sources */,
 				1FFFD02B2C189FB100DBD96B /* FiltersNSlidersApp.swift in Sources */,
+				1FFFD05D2C18BE4300DBD96B /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var errorMessage: String?
     var body: some View {
         VStack {
-            coolChart(floats: viewModel.fftBins)
+            coolChart()
         }
         .padding()
         .task {
@@ -26,10 +26,8 @@ struct ContentView: View {
     }
     
     @MainActor
-    private func coolChart(floats: [Float]) -> some View {
-        Chart(Array(floats.enumerated()), id: \.0) { (idx, magnitude) in
-            LineMark(x: .value("", "\(idx)"), y: .value("magnitude", magnitude))
-        }
+    private func coolChart() -> some View {
+        ChartView()
     }
 }
 
