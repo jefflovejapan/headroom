@@ -14,6 +14,8 @@
 		1FFFD03C2C189FB200DBD96B /* FiltersNSlidersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD03B2C189FB200DBD96B /* FiltersNSlidersTests.swift */; };
 		1FFFD0462C189FB200DBD96B /* FiltersNSlidersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD0452C189FB200DBD96B /* FiltersNSlidersUITests.swift */; };
 		1FFFD0482C189FB200DBD96B /* FiltersNSlidersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD0472C189FB200DBD96B /* FiltersNSlidersUITestsLaunchTests.swift */; };
+		1FFFD0552C18A46300DBD96B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD0542C18A46300DBD96B /* ViewModel.swift */; };
+		1FFFD0572C18A70A00DBD96B /* kmart_synthgroove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFD0562C18A70A00DBD96B /* kmart_synthgroove.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1FFFD0412C189FB200DBD96B /* FiltersNSlidersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiltersNSlidersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFFD0452C189FB200DBD96B /* FiltersNSlidersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersNSlidersUITests.swift; sourceTree = "<group>"; };
 		1FFFD0472C189FB200DBD96B /* FiltersNSlidersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersNSlidersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FFFD0542C18A46300DBD96B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1FFFD0562C18A70A00DBD96B /* kmart_synthgroove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kmart_synthgroove.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +98,9 @@
 		1FFFD0292C189FB100DBD96B /* FiltersNSliders */ = {
 			isa = PBXGroup;
 			children = (
+				1FFFD0582C18A70E00DBD96B /* Resources */,
 				1FFFD02A2C189FB100DBD96B /* FiltersNSlidersApp.swift */,
+				1FFFD0542C18A46300DBD96B /* ViewModel.swift */,
 				1FFFD02C2C189FB100DBD96B /* ContentView.swift */,
 				1FFFD02E2C189FB200DBD96B /* Assets.xcassets */,
 				1FFFD0302C189FB200DBD96B /* Preview Content */,
@@ -125,6 +131,14 @@
 				1FFFD0472C189FB200DBD96B /* FiltersNSlidersUITestsLaunchTests.swift */,
 			);
 			path = FiltersNSlidersUITests;
+			sourceTree = "<group>";
+		};
+		1FFFD0582C18A70E00DBD96B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FFFD0562C18A70A00DBD96B /* kmart_synthgroove.mp3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +247,7 @@
 			files = (
 				1FFFD0322C189FB200DBD96B /* Preview Assets.xcassets in Resources */,
 				1FFFD02F2C189FB200DBD96B /* Assets.xcassets in Resources */,
+				1FFFD0572C18A70A00DBD96B /* kmart_synthgroove.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FFFD02D2C189FB100DBD96B /* ContentView.swift in Sources */,
+				1FFFD0552C18A46300DBD96B /* ViewModel.swift in Sources */,
 				1FFFD02B2C189FB100DBD96B /* FiltersNSlidersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

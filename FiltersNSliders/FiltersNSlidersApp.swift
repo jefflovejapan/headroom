@@ -13,5 +13,6 @@ struct FiltersNSlidersApp: App {
         WindowGroup {
             ContentView()
         }
+        .environmentObject(ViewModel())
     }
 }
