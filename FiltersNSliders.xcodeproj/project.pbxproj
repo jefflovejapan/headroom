@@ -16,6 +16,7 @@
 		1FFFD0482C189FB200DBD96B /* FiltersNSlidersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD0472C189FB200DBD96B /* FiltersNSlidersUITestsLaunchTests.swift */; };
 		1FFFD0552C18A46300DBD96B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD0542C18A46300DBD96B /* ViewModel.swift */; };
 		1FFFD0572C18A70A00DBD96B /* kmart_synthgroove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFD0562C18A70A00DBD96B /* kmart_synthgroove.mp3 */; };
+		1FFFD05B2C18B5BF00DBD96B /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1FFFD05A2C18B5BF00DBD96B /* AudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFFD05B2C18B5BF00DBD96B /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +159,9 @@
 			dependencies = (
 			);
 			name = FiltersNSliders;
+			packageProductDependencies = (
+				1FFFD05A2C18B5BF00DBD96B /* AudioKit */,
+			);
 			productName = FiltersNSliders;
 			productReference = 1FFFD0272C189FB100DBD96B /* FiltersNSliders.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 1FFFD01E2C189FB100DBD96B;
+			packageReferences = (
+				1FFFD0592C18B5BF00DBD96B /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 1FFFD0282C189FB100DBD96B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -604,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FFFD0592C18B5BF00DBD96B /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1FFFD05A2C18B5BF00DBD96B /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FFFD0592C18B5BF00DBD96B /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FFFD01F2C189FB100DBD96B /* Project object */;
 }
