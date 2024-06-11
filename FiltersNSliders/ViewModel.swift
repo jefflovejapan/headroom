@@ -17,6 +17,8 @@ class ViewModel: ObservableObject {
     
     @MainActor
     @Published var trackInfo: String?
+    @MainActor
+    @Published var fftBins: [Float] = []
     private(set) var bufferSize: UInt32 = 512
     private var player: AudioPlayer?
     private let engine: AudioEngine
@@ -44,7 +46,7 @@ class ViewModel: ObservableObject {
         self.player = player
         
         let tap = FFTTap(player) { floats in
-            print("Got \(floats.count) floats!")
+            self.fftBins = floats
         }
         self.tap = tap
         tap.start()

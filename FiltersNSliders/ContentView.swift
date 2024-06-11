@@ -6,19 +6,14 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ContentView: View {
     @EnvironmentObject private var viewModel: ViewModel
     @State private var errorMessage: String?
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            if let errorMessage {
-                Text("Error: \(errorMessage)")
-            }
+            coolChart(floats: viewModel.fftBins)
         }
         .padding()
         .task {
@@ -27,6 +22,13 @@ struct ContentView: View {
             } catch {
                 self.errorMessage = error.localizedDescription
             }
+        }
+    }
+    
+    @MainActor
+    private func coolChart(floats: [Float]) -> some View {
+        Chart(Array(floats.enumerated()), id: \.0) { (idx, magnitude) in
+            LineMark(x: .value("", "\(idx)"), y: .value("magnitude", magnitude))
         }
     }
 }
