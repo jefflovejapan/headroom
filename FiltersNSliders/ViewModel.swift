@@ -20,6 +20,7 @@ class ViewModel: ObservableObject {
     private(set) var bufferSize: UInt32 = 512
     private var player: AudioPlayer?
     private let engine: AudioEngine
+    private var tap: FFTTap?
     
     init() throws {
         self.engine = AudioEngine()
@@ -41,6 +42,12 @@ class ViewModel: ObservableObject {
         engine.output = player
         try self.engine.start()
         self.player = player
+        
+        let tap = FFTTap(player) { floats in
+            print("Got \(floats.count) floats!")
+        }
+        self.tap = tap
+        tap.start()
         player.play()
     }
 }
